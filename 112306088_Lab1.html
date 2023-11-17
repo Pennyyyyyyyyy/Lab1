@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Creation</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <!-- First table with a cell crossing three columns in the first row -->
+  <table border="1">
+    <tr>
+      <th colspan= "3" > About -- 112306088</th>
+    </tr>
+
+  <!-- Second table with three columns and three rows -->
+    <tr>
+      <!-- First Column, spanning three rows -->
+      <td rowspan="3">
+        <img src=" images.jpeg" width="85.2" height="94.4"><br>Personal Photo
+      </td>
+      <!-- Second Column, Row 1 -->
+      <td colspan="2">Name: <input type="text"><br>
+        Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </td>
+    </tr>
+    <tr>
+      <!-- Second Column, Row 2 -->
+      <td>Country:
+        <select>
+          <option value="Taipei">Taipei</option>
+          <option value="Tainan">Tainan</option>
+          <option value="Taichung">Taichung</option>
+          <option value="Taoyuan">Taoyuan</option>
+        </select>
+      </td>
+      <!-- Third Column, Row 2 -->
+      <td>Birthday: <input type="date"></td>
+    </tr>
+    <tr>
+      <!-- Second Column, Row 3 -->
+      <td colspan="2">E-mail: <input type="email"></td>
+    </tr>
+
+  <!-- Third table with two columns and three rows -->
+  
+    <tr>
+      <!-- Column 1, Row 1 -->
+      <td>Hobby</td>
+      <!-- Column 2, Row 1 -->
+      <td colspan="2">
+        <input type="checkbox" id="swimming">
+        <label for="swimming">Swimming</label>
+        <input type="checkbox" id="volleyball">
+        <label for="volleyball">Volleyball</label>
+        <input type="checkbox" id="movie">
+        <label for="movie">Movie</label>
+        <input type="checkbox" id="game">
+        <label for="game">Game</label>
+        <input type="checkbox" id="sleep">
+        <label for="sleep">Sleep</label>
+      </td>
+    </tr>
+    <tr>
+      <!-- Column 1, Row 2 -->
+      <td>Skill</td>
+      <!-- Column 2, Row 2 -->
+      <td colspan="2">
+        <input type="checkbox" id="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="ms_office">
+        <label for="ms_office">Microsoft Office</label>
+        <input type="checkbox" id="premiere">
+        <label for="premiere">Premiere</label>
+      </td>
+    </tr>
+    <tr>
+      <!-- Column 1, Row 3 -->
+      <td>Say something</td>
+      <!-- Column 2, Row 3 -->
+      <td colspan="3">
+        <textarea placeholder="Say something here"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+      <form>
+        <input type="submit" value="提交">
+        <input type="reset" value ="重設">
+      </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
